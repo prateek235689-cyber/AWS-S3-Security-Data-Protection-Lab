@@ -20,7 +20,7 @@ The project also includes security testing to verify that authorized operations 
 
 ## 🔒 Security Implementation
 
-### 1. Secure S3 Bucket Creation
+### 1. Secure S3 Bucket Creation:
 Created a dedicated Amazon S3 bucket for this cloud security lab.
 
 The initial configuration includes:
@@ -31,6 +31,13 @@ The initial configuration includes:
 - Object Lock disabled for the initial lab configuration.
 
 This bucket will be used to implement and test additional data protection and access-control mechanisms.
-#### Evidence
 
-![S3 Bucket Created](screenshots/Screenshot of (1) S3 Bucket creation.png)
+#### Evidence:
+![S3 Bucket Created](screenshots/Screenshot-of-(1)-S3-Bucket-creation.png)
+
+### 2. Public Access Protection:
+Amazon S3 Block Public Access is enabled on the bucket to reduce the risk of unintended public data exposure.
+The bucket is designed to remain private, with access granted only through explicitly authorized AWS identities and policies.
+
+#### Evidence:
+![Block Public Access](screenshots/Screenshot-of(2)-Public-access-blocked.png)
