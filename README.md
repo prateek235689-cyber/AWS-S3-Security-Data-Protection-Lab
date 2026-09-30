@@ -33,11 +33,11 @@ The initial configuration includes:
 This bucket will be used to implement and test additional data protection and access-control mechanisms.
 
 #### Evidence:
-![S3 Bucket Created](screenshots/Screenshot-of-(1)-S3-Bucket-creation.png)
+![S3 Bucket Created](Screenshots/Screenshot-of-(1)-S3-Bucket-creation.png)
 
 ### 2. Public Access Protection:
 Amazon S3 Block Public Access is enabled on the bucket to reduce the risk of unintended public data exposure.
 The bucket is designed to remain private, with access granted only through explicitly authorized AWS identities and policies.
 
 #### Evidence:
-![Block Public Access](screenshots/Screenshot-of-(2)-Public-access-blocked.png)
+![Block Public Access](Screenshots/Screenshot-of-(2)-Public-access-blocked.png)
