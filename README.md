@@ -40,4 +40,4 @@ Amazon S3 Block Public Access is enabled on the bucket to reduce the risk of uni
 The bucket is designed to remain private, with access granted only through explicitly authorized AWS identities and policies.
 
 #### Evidence:
-![Block Public Access](screenshots/Screenshot-of(2)-Public-access-blocked.png)
+![Block Public Access](screenshots/Screenshot-of-(2)-Public-access-blocked.png)
