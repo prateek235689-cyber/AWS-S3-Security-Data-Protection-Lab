@@ -41,3 +41,10 @@ The bucket is designed to remain private, with access granted only through expli
 
 #### Evidence:
 ![Block Public Access](Screenshots/Screenshot-of-(2)-Public-access-blocked.png)
+
+### 3. Encryption at Rest:
+Server-side encryption using Amazon S3 managed keys (SSE-S3) is configured for the bucket.
+This provides encryption at rest for objects stored within the S3 bucket.
+
+#### Evidence:
+![SSE-S3 Encryption](Screenshots/Screenshot-of-(3)-Server-side-encryption.png)
