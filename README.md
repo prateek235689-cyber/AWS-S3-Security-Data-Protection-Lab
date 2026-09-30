@@ -35,6 +35,7 @@ This bucket will be used to implement and test additional data protection and ac
 #### Evidence:
 ![S3 Bucket Created](Screenshots/Screenshot-of-(1)-S3-Bucket-creation.png)
 
+
 ### 2. Public Access Protection:
 Amazon S3 Block Public Access is enabled on the bucket to reduce the risk of unintended public data exposure.
 The bucket is designed to remain private, with access granted only through explicitly authorized AWS identities and policies.
@@ -42,9 +43,18 @@ The bucket is designed to remain private, with access granted only through expli
 #### Evidence:
 ![Block Public Access](Screenshots/Screenshot-of-(2)-Public-access-blocked.png)
 
+
 ### 3. Encryption at Rest:
 Server-side encryption using Amazon S3 managed keys (SSE-S3) is configured for the bucket.
 This provides encryption at rest for objects stored within the S3 bucket.
 
 #### Evidence:
 ![SSE-S3 Encryption](Screenshots/Screenshot-of-(3)-Server-side-encryption.png)
+
+
+### 4. S3 Versioning:
+S3 Versioning was enabled to provide additional protection against accidental modification or deletion of objects.
+The control was validated by uploading multiple versions of the same test object and verifying that previous versions were retained.
+
+#### Evidence:
+![Versioning Enabled](Screenshots/Screenshot-of-(4)-Versioning.png)
