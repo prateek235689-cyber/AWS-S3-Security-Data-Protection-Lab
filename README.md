@@ -17,3 +17,20 @@ The project also includes security testing to verify that authorized operations 
 - Test allowed and denied S3 operations.
 - Monitor S3-related activity using AWS CloudTrail.
 - Document security controls and testing results.
+
+## 🔒 Security Implementation
+
+### 1. Secure S3 Bucket Creation
+Created a dedicated Amazon S3 bucket for this cloud security lab.
+
+The initial configuration includes:
+- S3 Object Ownership with ACLs disabled.
+- Block Public Access enabled.
+- Server-side encryption using Amazon S3 managed keys (SSE-S3).
+- Resource tags for project identification.
+- Object Lock disabled for the initial lab configuration.
+
+This bucket will be used to implement and test additional data protection and access-control mechanisms.
+#### Evidence
+
+![S3 Bucket Created](screenshots/Screenshot of (1) S3 Bucket creation.png)
