@@ -58,3 +58,26 @@ The control was validated by uploading multiple versions of the same test object
 
 #### Evidence:
 ![Versioning Enabled](Screenshots/Screenshot-of-(4)-Versioning.png)
+
+
+### 5. IAM Least-Privilege Policy:
+To implement the **Principle of Least Privilege**, a custom IAM policy named `S3SecurityLabReadOnlyPolicy` was created for the S3 security lab.
+The policy provides only the permissions required to list the designated S3 bucket and read objects stored within it.
+
+#### Permissions Granted:
+- `s3:ListBucket` — Allows listing objects within the designated S3 bucket.
+- `s3:GetObject` — Allows reading objects stored within the designated S3 bucket.
+
+The policy intentionally does **not** grant write, delete, or administrative S3 permissions such as:
+- `s3:PutObject`
+- `s3:DeleteObject`
+- `s3:*`
+
+This limits the identity to the minimum permissions required for read-only access and reduces the risk associated with excessive permissions.
+
+#### IAM Policy:
+The policy JSON is stored in the repository at:
+[`iam-policies/s3-read-only-policy.json`](iam-policies/s3-read-only-policy.json)
+
+#### Evidence:
+![Custom IAM Least-Privilege Policy](Screenshots/Screenshot-of-(5)-Custom-IAM-Policy.png)
