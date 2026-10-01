@@ -5,13 +5,13 @@
       "Sid": "ListSpecificBucket",
       "Effect": "Allow",
       "Action": "s3:ListBucket",
-      "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME"
+      "Resource": "arn:aws:s3:::aws-s3-security-lab-project-1"
     },
     {
       "Sid": "ReadObjects",
       "Effect": "Allow",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
+      "Resource": "arn:aws:s3:::aws-s3-security-lab-project-1/*"
     }
   ]
 }
