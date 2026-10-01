@@ -81,3 +81,19 @@ The policy JSON is stored in the repository at:
 
 #### Evidence:
 ![Custom IAM Least-Privilege Policy](Screenshots/Screenshot-of-(5)-Custom-IAM-Policy.png)
+
+
+#### IAM Test User:
+A dedicated IAM user named `s3-security-test-user` was created to validate the custom least-privilege policy.
+Only the `S3SecurityLabReadOnlyPolicy` was attached to this user. No AWS managed administrative or full-access S3 policies were assigned.
+
+The test user will be used to verify that:
+- Bucket listing is allowed.
+- Object read access is allowed.
+- Object uploads are denied.
+- Object deletion is denied.
+
+This provides a practical validation of the least-privilege access-control configuration.
+
+#### Test User Evidence:
+![IAM Test User Permissions](Screenshots/Screenshot-of-(6)-Test-user-permissions.png)
